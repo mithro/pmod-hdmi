@@ -23,10 +23,10 @@ if echo $TEMPLATE_REV | grep -q dirty; then
 fi
 echo "$TEMPLATES are at $TEMPLATE_REV"
 
-TEMPLATE=hdmi/output/ptn3363/hdmi_TXn.sch
-NAME=TX0
+TEMPLATE=hdmi/input/ad8195/hdmi_RXn.sch
+NAME=RX0
 cat $TEMPLATES/$TEMPLATE | sed \
-    -e"s/\\\$TXn\\\$1/$NAME/g" \
+    -e"s/\\\$RXn\\\$1/$NAME/g" \
     -e"s,\\\$WARNING1\\\$,This sheet is generated from $TEMPLATES," \
     -e"s/\\\$WARNING2\\\$/DO NOT MODIFY!!!/" \
     -e"s/\\\$WARNING3\\\$/$TEMPLATE_REV/" \

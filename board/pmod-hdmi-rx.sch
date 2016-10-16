@@ -36,7 +36,7 @@ LIBS:pmod-conn_6x2
 LIBS:EEPROM
 LIBS:xc9140
 LIBS:reg710-dbv
-LIBS:pmod-hdmi-tx-cache
+LIBS:pmod-hdmi-rx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -45,8 +45,8 @@ Sheet 1 2
 Title "PTN3363 HDMI Transmitter Expansion Module"
 Date ""
 Rev ""
-Comp "https://github.com/mithro/pmod-hdmi-tx-ptn3363"
-Comment1 "Using references from Numato Lab and Apertus AXIOM"
+Comp "https://github.com/mithro/pmod-hdmi-rx-ad8195"
+Comment1 ""
 Comment2 "Designed by TimVideos.us"
 Comment3 "License: CC-BY-SA 4.0 International"
 Comment4 "$Id$"
@@ -54,43 +54,43 @@ $EndDescr
 $Sheet
 S 4150 1400 2100 1600
 U 5802F547
-F0 "HDMI TX" 60
-F1 "hdmi_TX0.sch" 60
-F2 "~HDMI_TX0_OE" I R 6250 2000 60 
-F3 "HDMI_TX0_EQ0" I R 6250 2600 60 
-F4 "HDMI_TX0_EQ1" I R 6250 2500 60 
-F5 "HDMI_TX0_DDC_EN" I R 6250 2350 60 
-F6 "HDMI_TX0_CLK+" I L 4150 2250 60 
-F7 "HDMI_TX0_CLK-" I L 4150 2350 60 
-F8 "HDMI_TX0_D0+" I L 4150 2000 60 
-F9 "HDMI_TX0_D0-" I L 4150 2100 60 
-F10 "HDMI_TX0_D1+" I L 4150 1750 60 
-F11 "HDMI_TX0_D1-" I L 4150 1850 60 
-F12 "HDMI_TX0_D2+" I L 4150 1500 60 
-F13 "HDMI_TX0_D2-" I L 4150 1600 60 
-F14 "HDMI_TX0_SCL" B R 6250 1500 60 
-F15 "HDMI_TX0_SDA" B R 6250 1600 60 
-F16 "HDMI_TX0_DDET" I R 6250 2250 60 
-F17 "HDMI_TX0_HPD" O R 6250 1800 60 
-F18 "HDMI_TX0_HIZ_EN" I R 6250 2100 60 
-F19 "HDMI_TX0_CEC" I R 6250 1700 60 
+F0 "HDMI RX" 60
+F1 "hdmi_RX0.sch" 60
+F2 "~HDMI_RX0_OE" I R 6250 2000 60 
+F3 "HDMI_RX0_EQ0" I R 6250 2600 60 
+F4 "HDMI_RX0_EQ1" I R 6250 2500 60 
+F5 "HDMI_RX0_DDC_EN" I R 6250 2350 60 
+F6 "HDMI_RX0_CLK+" I L 4150 2250 60 
+F7 "HDMI_RX0_CLK-" I L 4150 2350 60 
+F8 "HDMI_RX0_D0+" I L 4150 2000 60 
+F9 "HDMI_RX0_D0-" I L 4150 2100 60 
+F10 "HDMI_RX0_D1+" I L 4150 1750 60 
+F11 "HDMI_RX0_D1-" I L 4150 1850 60 
+F12 "HDMI_RX0_D2+" I L 4150 1500 60 
+F13 "HDMI_RX0_D2-" I L 4150 1600 60 
+F14 "HDMI_RX0_SCL" B R 6250 1500 60 
+F15 "HDMI_RX0_SDA" B R 6250 1600 60 
+F16 "HDMI_RX0_DDET" I R 6250 2250 60 
+F17 "HDMI_RX0_HPD" O R 6250 1800 60 
+F18 "HDMI_RX0_HIZ_EN" I R 6250 2100 60 
+F19 "HDMI_RX0_CEC" I R 6250 1700 60 
 $EndSheet
 Text Label 3300 3000 0    60   ~ 0
-HDMI_TX0_CLK-
+HDMI_RX0_CLK-
 Text Label 3300 2900 0    60   ~ 0
-HDMI_TX0_D0-
+HDMI_RX0_D0-
 Text Label 3300 2800 0    60   ~ 0
-HDMI_TX0_D1-
+HDMI_RX0_D1-
 Text Label 3300 2700 0    60   ~ 0
-HDMI_TX0_D2-
+HDMI_RX0_D2-
 Text Label 1700 2700 2    60   ~ 0
-HDMI_TX0_D2+
+HDMI_RX0_D2+
 Text Label 1700 2800 2    60   ~ 0
-HDMI_TX0_D1+
+HDMI_RX0_D1+
 Text Label 1700 2900 2    60   ~ 0
-HDMI_TX0_D0+
+HDMI_RX0_D0+
 Text Label 1700 3000 2    60   ~ 0
-HDMI_TX0_CLK+
+HDMI_RX0_CLK+
 $Comp
 L GND #PWR01
 U 1 1 58032FEA
@@ -193,11 +193,11 @@ F 3 "" H 3550 6775 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3550 6000 2    60   Input ~ 0
-TX05V0
+RX05V0
 Text GLabel 5250 1125 2    60   Input ~ 0
 VCC3V3
 Text Label 3550 6075 3    60   ~ 0
-TX05V0
+RX05V0
 $Comp
 L GND #PWR05
 U 1 1 5803DE38
@@ -212,15 +212,15 @@ $EndComp
 Text Notes 700  6225 0    60   ~ 0
 Option 1\n
 Text Label 8125 1500 0    60   ~ 0
-HDMI_TX0_SCL
+HDMI_RX0_SCL
 Text Label 8125 1600 0    60   ~ 0
-HDMI_TX0_SDA
+HDMI_RX0_SDA
 Text Label 8125 1700 0    60   ~ 0
-HDMI_TX0_CEC
+HDMI_RX0_CEC
 Text Label 8125 1800 0    60   ~ 0
-HDMI_TX0_HPD
+HDMI_RX0_HPD
 Text Notes 8875 1850 0    60   ~ 0
-On PTX0\n - SCL on Pin X\n - SDA on Pin X\n - CEC on Pin X\n - HPD on Pin X
+On PRX0\n - SCL on Pin X\n - SDA on Pin X\n - CEC on Pin X\n - HPD on Pin X
 Text Notes 1850 4200 0    60   ~ 0
 HDMI High Speed Signals\nPositive signals on Top Row\nNegative signals on Bottom Row
 $Comp
@@ -235,19 +235,19 @@ F 3 "" H 2500 2950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 7975 2500 0    60   ~ 0
-HDMI_TX0_EQ1
+HDMI_RX0_EQ1
 Text Label 7975 2600 0    60   ~ 0
-HDMI_TX0_EQ0
+HDMI_RX0_EQ0
 Text Notes 8875 2600 0    60   ~ 0
-On PTX0\n - DET on Pin X\n - DDC on Pin X\n - EQ1 on Pin X\n - EQ0 on Pin X
+On PRX0\n - DET on Pin X\n - DDC on Pin X\n - EQ1 on Pin X\n - EQ0 on Pin X
 Text Label 7975 2250 0    60   ~ 0
-HDMI_TX0_DDET
+HDMI_RX0_DDET
 Text Label 7975 2350 0    60   ~ 0
-HDMI_TX0_DCC_EN
+HDMI_RX0_DCC_EN
 Text Label 6300 2000 0    60   ~ 0
-~HDMI_TX0_OE
+~HDMI_RX0_OE
 Text Label 6300 2100 0    60   ~ 0
-HDMI_TX0_HIZ_EN
+HDMI_RX0_HIZ_EN
 $Comp
 L R RDE1
 U 1 1 58036726

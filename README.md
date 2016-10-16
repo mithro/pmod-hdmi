@@ -1,6 +1,6 @@
-# pmod-hdmi-tx
+# pmod-hdmi-rx
 
-HDMI transmitter based around a PTN3363.
+HDMI receiver based around a AD8195.
 
 ## License
 
