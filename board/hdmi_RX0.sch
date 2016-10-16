@@ -28,21 +28,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pmod
-LIBS:hdmi
-LIBS:ma78l00
 LIBS:pmod-conn_6x2
-LIBS:EEPROM
-LIBS:xc9140
-LIBS:reg710-dbv
-LIBS:ad8195
+LIBS:ma78l00
 LIBS:fdv301n
-LIBS:pmod-hdmi-rx-cache
+LIBS:hdmi
+LIBS:ad8195
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -122,10 +117,10 @@ F 5 "MBR0530CT-ND" H 6550 1150 60  0001 C CNN "digikey#"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR014
+L GND #PWR102
 U 1 1 57C0819F
 P 7850 4300
-F 0 "#PWR014" H 7850 4050 60  0001 C CNN
+F 0 "#PWR102" H 7850 4050 60  0001 C CNN
 F 1 "GND" H 7850 4150 60  0000 C CNN
 F 2 "" H 7850 4300 60  0000 C CNN
 F 3 "" H 7850 4300 60  0000 C CNN
@@ -168,10 +163,10 @@ F 3 "" H 6950 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR015
+L GND #PWR101
 U 1 1 57C093D2
 P 6850 1800
-F 0 "#PWR015" H 6850 1550 60  0001 C CNN
+F 0 "#PWR101" H 6850 1550 60  0001 C CNN
 F 1 "GND" H 6850 1650 60  0000 C CNN
 F 2 "" H 6850 1800 60  0000 C CNN
 F 3 "" H 6850 1800 60  0000 C CNN
@@ -665,7 +660,7 @@ GND
 Text HLabel 1500 6600 0    60   Input ~ 0
 HDMI_RX0_HPD
 Text Notes 615  11035 0    197  ~ 39
-This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\ne23ffb6
+This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\nedd182c
 Text Label 4820 6600 0    60   ~ 0
 HDMI_RX0_CEC
 Text Label 7560 6800 2    60   ~ 0
@@ -957,15 +952,15 @@ Wire Wire Line
 Wire Wire Line
 	7150 3650 6950 3650
 Wire Wire Line
-	6950 3650 6950 4900
+	6950 4900 6950 3650
 Wire Wire Line
-	6950 4900 5770 4900
+	5770 4900 6950 4900
 Wire Wire Line
 	7150 3750 7050 3750
 Wire Wire Line
-	7050 3750 7050 5000
+	7050 5000 7050 3750
 Wire Wire Line
-	7050 5000 5770 5000
+	5770 5000 7050 5000
 Wire Wire Line
 	6600 4900 6600 5150
 Connection ~ 6600 4900
