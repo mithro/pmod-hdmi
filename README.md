@@ -1,6 +1,7 @@
-# pmod-hdmi-tx
+# pmod-hdmi-XX
 
-HDMI transmitter based around a PTN3363.
+See the [TX branch](https://github.com/mithro/pmod-hdmi/tree/tx) for a HDMI transmitter based around a PTN3363.
+See the [RX branch](https://github.com/mithro/pmod-hdmi/tree/rx) for a HDMI receiver based around a AD8195.
 
 ## License
 
