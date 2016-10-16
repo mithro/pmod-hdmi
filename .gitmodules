@@ -1,0 +1,6 @@
+[submodule "external/kicad-pmod"]
+	path = external/pmod
+	url = https://github.com/mithro/kicad-pmod.git
+[submodule "external/templates"]
+	path = external/templates
+	url = https://github.com/mithro/HDMI2USB-kicad-templates.git
