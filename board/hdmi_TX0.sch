@@ -32,7 +32,6 @@ LIBS:pmod-conn_6x2
 LIBS:ma78l00
 LIBS:hdmi
 LIBS:ptn3363
-LIBS:hdmi_TXn-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -666,7 +665,7 @@ HDMI_TX0_CEC
 Wire Wire Line
 	6500 7050 6500 7150
 Text Notes 670  10960 0    197  ~ 39
-This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n7e53b7f
+This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n3530408
 Wire Wire Line
 	2255 6970 2325 6970
 Wire Wire Line
@@ -802,7 +801,7 @@ F 1 "PMOD-CONN_6X2" V 3265 6820 39  0000 C CNN
 F 2 "" H 3265 6820 60  0000 C CNN
 F 3 "" H 3265 6820 60  0000 C CNN
 	1    3265 6820
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text Label 10600 4450 0    60   ~ 0
 VCC3V3
