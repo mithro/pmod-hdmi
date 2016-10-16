@@ -30,12 +30,13 @@ LIBS:contrib
 LIBS:valves
 LIBS:pmod
 LIBS:hdmi
-LIBS:ptn3363
 LIBS:ma78l00
 LIBS:pmod-conn_6x2
 LIBS:EEPROM
 LIBS:xc9140
 LIBS:reg710-dbv
+LIBS:ad8195
+LIBS:fdv301n
 LIBS:pmod-hdmi-rx-cache
 EELAYER 25 0
 EELAYER END
