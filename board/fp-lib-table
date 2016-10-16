@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name pmod)(type KiCad)(uri ${KIPRJMOD}/../external/templates/libraries/pmod-conn_6x2.pretty)(options "")(descr ""))
+  (lib (name hdmi)(type KiCad)(uri ${KIPRJMOD}/../external/templates/hdmi/libraries/hdmi.pretty)(options "")(descr ""))
+)
