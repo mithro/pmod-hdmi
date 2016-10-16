@@ -1,4 +1,4 @@
-update=Sun 16 Oct 2016 04:12:22 PM AEDT
+update=Sun 16 Oct 2016 06:03:17 PM AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -65,3 +65,4 @@ LibName33=ma78l00
 LibName34=pmod-conn_6x2
 LibName35=EEPROM
 LibName36=xc9140
+LibName37=reg710-dbv
