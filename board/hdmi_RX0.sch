@@ -28,21 +28,16 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pmod
-LIBS:hdmi
-LIBS:ma78l00
 LIBS:pmod-conn_6x2
-LIBS:EEPROM
-LIBS:xc9140
-LIBS:reg710-dbv
-LIBS:ad8195
+LIBS:ma78l00
 LIBS:fdv301n
-LIBS:pmod-hdmi-rx-cache
+LIBS:hdmi
+LIBS:ad8195
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -542,13 +537,13 @@ Text HLabel 10100 3400 2    60   BiDi ~ 0
 HDMI_RX0_SCL
 Text HLabel 10100 3500 2    60   BiDi ~ 0
 HDMI_RX0_SDA
-Text HLabel 6050 4900 0    60   Input ~ 0
+Text HLabel 5770 4900 0    60   Input ~ 0
 HDMI_RX0_TXEN
-Text HLabel 6050 5000 0    60   Input ~ 0
+Text HLabel 5770 5000 0    60   Input ~ 0
 HDMI_RX0_PEEN
-Text Label 4820 6700 0    60   ~ 0
+Text Label 7560 6600 2    60   ~ 0
 HDMI_RX0_SCL
-Text Label 4820 6800 0    60   ~ 0
+Text Label 4820 6700 0    60   ~ 0
 HDMI_RX0_SDA
 Text Label 5170 7100 0    60   ~ 0
 VCC3V3
@@ -652,33 +647,33 @@ Text Label 1900 4800 0    60   ~ 0
 VCC5V0_RX0
 Text Label 6150 4000 2    60   ~ 0
 HDMIP_RX0_HPD
-Text Label 3100 6050 0    60   ~ 0
+Text Label 3525 5785 1    60   ~ 0
 HDMIP_RX0_HPD
 Text Label 1500 6600 0    60   ~ 0
-HDMI_RX0_HPA
+HDMI_RX0_HPD
 Text Label 1500 7150 0    60   ~ 0
 GND
-Text Label 4820 6900 0    60   ~ 0
+Text Label 7560 6700 2    60   ~ 0
 HDMI_RX0_HPA
 Text Label 6750 1750 0    60   ~ 0
 GND
 Text HLabel 1500 6600 0    60   Input ~ 0
-HDMI_RX0_HPA
+HDMI_RX0_HPD
 Text Notes 615  11035 0    197  ~ 39
-This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n1620b96
+This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\ne23ffb6
 Text Label 4820 6600 0    60   ~ 0
 HDMI_RX0_CEC
-Text Label 7560 6700 2    60   ~ 0
-HDMI_RX0_IO1
 Text Label 7560 6800 2    60   ~ 0
+HDMI_RX0_IO1
+Text Label 4820 6900 0    60   ~ 0
 HDMI_RX0_TXEN
 Text Label 7560 6900 2    60   ~ 0
 HDMI_RX0_PEEN
-Text Label 7560 6600 2    60   ~ 0
+Text Label 4820 6800 0    60   ~ 0
 HDMI_RX0_IO0
-Text HLabel 7560 6600 2    60   BiDi ~ 0
+Text HLabel 4820 6800 0    60   BiDi ~ 0
 HDMI_RX0_IO0
-Text HLabel 7560 6700 2    60   BiDi ~ 0
+Text HLabel 7560 6800 2    60   BiDi ~ 0
 HDMI_RX0_IO1
 Text HLabel 10100 2100 2    60   Output ~ 0
 HDMI_RX0_D2+
@@ -957,15 +952,15 @@ Wire Wire Line
 Wire Wire Line
 	7150 3650 6950 3650
 Wire Wire Line
-	6950 3650 6950 4900
+	6950 4900 6950 3650
 Wire Wire Line
-	6950 4900 6050 4900
+	5770 4900 6950 4900
 Wire Wire Line
 	7150 3750 7050 3750
 Wire Wire Line
-	7050 3750 7050 5000
+	7050 5000 7050 3750
 Wire Wire Line
-	7050 5000 6050 5000
+	5770 5000 7050 5000
 Wire Wire Line
 	6600 4900 6600 5150
 Connection ~ 6600 4900
@@ -1117,6 +1112,19 @@ F 1 "PMOD-CONN_6X2" V 6150 6850 39  0000 C CNN
 F 2 "pmod:pmod_pin_array_6x2" H 6150 6850 60  0001 C CNN
 F 3 "" H 6150 6850 60  0000 C CNN
 	1    6150 6850
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
+Wire Notes Line
+	5965 4135 5965 5735
+Wire Notes Line
+	5965 5735 6805 5735
+Wire Notes Line
+	6805 5735 6805 4135
+Wire Notes Line
+	6805 4135 5965 4135
+Text Notes 5995 4240 0    60   ~ 0
+Do not populate
+Wire Wire Line
+	3525 5785 3525 6050
+Connection ~ 3525 6050
 $EndSCHEMATC
