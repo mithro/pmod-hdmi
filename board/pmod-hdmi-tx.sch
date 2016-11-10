@@ -77,17 +77,17 @@ F19 "HDMI_TX0_CEC" I R 6250 1700 60
 $EndSheet
 Text Label 3300 3000 0    60   ~ 0
 HDMI_TX0_CLK-
-Text Label 3300 2800 0    60   ~ 0
-HDMI_TX0_D0-
 Text Label 1700 3000 2    60   ~ 0
+HDMI_TX0_D0-
+Text Label 3300 2800 0    60   ~ 0
 HDMI_TX0_D1-
 Text Label 1700 2800 2    60   ~ 0
 HDMI_TX0_D2-
 Text Label 1700 2700 2    60   ~ 0
 HDMI_TX0_D2+
-Text Label 1700 2900 2    60   ~ 0
-HDMI_TX0_D1+
 Text Label 3300 2700 0    60   ~ 0
+HDMI_TX0_D1+
+Text Label 1700 2900 2    60   ~ 0
 HDMI_TX0_D0+
 Text Label 3300 2900 0    60   ~ 0
 HDMI_TX0_CLK+
@@ -111,7 +111,7 @@ F 1 "VCC" H 2500 3600 50  0000 C CNN
 F 2 "" H 2500 3450 50  0000 C CNN
 F 3 "" H 2500 3450 50  0000 C CNN
 	1    2500 3450
-	-1   0    0    1   
+	1    0    0    1   
 $EndComp
 Text Label 5150 1125 2    60   ~ 0
 VCC3V3
@@ -387,30 +387,16 @@ Text Notes 650  5850 0    79   ~ 16
 $Comp
 L PMOD-Device-x2-Type-XHS-Alt P1
 U 1 1 58242047
-P 2400 3250
-F 0 "P1" H 2500 3900 60  0000 C CNN
-F 1 "PMOD-Device-x2-Type-XHS-Alt" H 2490 3210 39  0001 C CNN
-F 2 "pmod-conn_6x2:pmod_pin_array_6x2" H 2500 3140 39  0001 C CNN
-F 3 "" H 2500 3550 60  0000 C CNN
-	1    2400 3250
-	1    0    0    -1  
+P 2600 3250
+F 0 "P1" H 2700 3900 60  0000 C CNN
+F 1 "PMOD-Device-x2-Type-XHS-Alt" H 2690 3210 39  0001 C CNN
+F 2 "pmod-conn_6x2:pmod_pin_array_6x2" H 2700 3140 39  0001 C CNN
+F 3 "" H 2700 3550 60  0000 C CNN
+	1    2600 3250
+	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2900 2700 2925 2700
-Wire Wire Line
-	2925 2700 3300 2700
-Wire Wire Line
-	2900 2800 2975 2800
-Wire Wire Line
-	2975 2800 3300 2800
-Wire Wire Line
-	2900 2900 3125 2900
-Wire Wire Line
-	3125 2900 3300 2900
-Wire Wire Line
-	2900 3000 3175 3000
-Wire Wire Line
-	3175 3000 3300 3000
+Text Notes 1900 4000 0    60   ~ 0
+HDMI High Speed Signals
 Wire Wire Line
 	1700 2700 1825 2700
 Wire Wire Line
@@ -428,29 +414,45 @@ Wire Wire Line
 Wire Wire Line
 	2075 3000 2100 3000
 Wire Wire Line
-	2900 3100 3000 3100
+	2900 2700 2925 2700
 Wire Wire Line
-	3000 3100 3000 3650
+	2925 2700 3300 2700
 Wire Wire Line
-	3000 3650 2500 3650
+	2900 2800 2975 2800
 Wire Wire Line
-	2500 3650 2000 3650
+	2975 2800 3300 2800
 Wire Wire Line
-	2000 3650 2000 3100
+	2900 2900 3125 2900
 Wire Wire Line
-	2000 3100 2100 3100
+	3125 2900 3300 2900
 Wire Wire Line
-	2100 3200 2050 3200
+	2900 3000 3175 3000
 Wire Wire Line
-	2050 3200 2050 3400
+	3175 3000 3300 3000
 Wire Wire Line
-	2050 3400 2500 3400
+	2100 3100 2000 3100
 Wire Wire Line
-	2500 3400 2950 3400
+	2000 3100 2000 3650
 Wire Wire Line
-	2950 3400 2950 3200
+	2000 3650 2500 3650
 Wire Wire Line
-	2950 3200 2900 3200
+	2500 3650 3000 3650
+Wire Wire Line
+	3000 3650 3000 3100
+Wire Wire Line
+	3000 3100 2900 3100
+Wire Wire Line
+	2900 3200 2950 3200
+Wire Wire Line
+	2950 3200 2950 3400
+Wire Wire Line
+	2950 3400 2500 3400
+Wire Wire Line
+	2500 3400 2050 3400
+Wire Wire Line
+	2050 3400 2050 3200
+Wire Wire Line
+	2050 3200 2100 3200
 Wire Wire Line
 	2500 3700 2500 3650
 Connection ~ 2500 3650
@@ -459,29 +461,27 @@ Wire Wire Line
 Connection ~ 2500 3400
 Wire Wire Line
 	3125 2250 4150 2250
-Connection ~ 2075 3000
+Connection ~ 3175 3000
 Wire Wire Line
-	2925 2000 4150 2000
-Connection ~ 2025 2900
+	2025 2000 4150 2000
+Connection ~ 3125 2900
 Wire Wire Line
-	2025 1750 4150 1750
-Connection ~ 1875 2800
-Wire Wire Line
-	1825 2700 1825 1500
+	2925 1750 4150 1750
+Connection ~ 2975 2800
 Wire Wire Line
 	1825 1500 4150 1500
-Connection ~ 1825 2700
+Connection ~ 2925 2700
 Wire Wire Line
 	1875 1600 4150 1600
 Wire Wire Line
-	2075 1850 4150 1850
-Connection ~ 2975 2800
+	2975 1850 4150 1850
+Connection ~ 1875 2800
 Wire Wire Line
-	2975 2100 4150 2100
-Connection ~ 3125 2900
+	2075 2100 4150 2100
+Connection ~ 2025 2900
 Wire Wire Line
 	3175 2350 4150 2350
-Connection ~ 3175 3000
+Connection ~ 2075 3000
 Wire Wire Line
 	6250 2000 7275 2000
 Wire Wire Line
@@ -678,21 +678,21 @@ Wire Wire Line
 	6600 3275 6850 3275
 Wire Wire Line
 	4700 1125 4700 1100
-Wire Wire Line
-	1875 2800 1875 1600
-Wire Wire Line
-	2025 2900 2025 1750
-Wire Wire Line
-	2075 3000 2075 1850
-Wire Wire Line
-	2925 2700 2925 2000
-Connection ~ 2925 2700
-Wire Wire Line
-	2975 2100 2975 2800
+Connection ~ 1825 2700
 Wire Wire Line
 	3125 2900 3125 2250
 Wire Wire Line
-	3175 3000 3175 2350
-Text Notes 1900 4000 0    60   ~ 0
-HDMI High Speed Signals
+	3175 2350 3175 3000
+Wire Wire Line
+	2025 2900 2025 2000
+Wire Wire Line
+	2075 2100 2075 3000
+Wire Wire Line
+	2925 2700 2925 1750
+Wire Wire Line
+	2975 1850 2975 2800
+Wire Wire Line
+	1825 2700 1825 1500
+Wire Wire Line
+	1875 1600 1875 2800
 $EndSCHEMATC
