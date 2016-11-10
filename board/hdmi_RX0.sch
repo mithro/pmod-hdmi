@@ -646,21 +646,21 @@ $EndComp
 Text Label 1900 4800 0    60   ~ 0
 VCC5V0_RX0
 Text Label 6150 4000 2    60   ~ 0
-HDMIP_RX0_HPD
+HDMIP_RX0_HOT
 Text Label 3525 5785 1    60   ~ 0
-HDMIP_RX0_HPD
+HDMIP_RX0_HOT
 Text Label 1500 6600 0    60   ~ 0
-HDMI_RX0_HPD
+HDMI_RX0_HOT
 Text Label 1500 7150 0    60   ~ 0
 GND
 Text Label 7560 6700 2    60   ~ 0
-HDMI_RX0_HPA
+HDMI_RX0_HOT
 Text Label 6750 1750 0    60   ~ 0
 GND
 Text HLabel 1500 6600 0    60   Input ~ 0
-HDMI_RX0_HPD
+HDMI_RX0_HOT
 Text Notes 615  11035 0    197  ~ 39
-This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\nedd182c
+This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n4b96504
 Text Label 4820 6600 0    60   ~ 0
 HDMI_RX0_CEC
 Text Label 7560 6800 2    60   ~ 0

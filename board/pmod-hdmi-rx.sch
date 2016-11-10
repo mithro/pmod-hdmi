@@ -70,7 +70,7 @@ F11 "HDMI_RX0_SDA" B R 6250 1600 60
 F12 "HDMI_RX0_CEC" I R 6250 1700 60 
 F13 "HDMI_RX0_TXEN" I R 6250 2250 60 
 F14 "HDMI_RX0_PEEN" I R 6250 2350 60 
-F15 "HDMI_RX0_HPA" I R 6250 1800 60 
+F15 "HDMI_RX0_HOT" I R 6250 1800 60 
 F16 "HDMI_RX0_IO0" B R 6250 2500 60 
 F17 "HDMI_RX0_IO1" B R 6250 2600 60 
 $EndSheet
@@ -217,9 +217,9 @@ HDMI_RX0_SDA
 Text Label 8125 1700 0    60   ~ 0
 HDMI_RX0_CEC
 Text Label 8125 1800 0    60   ~ 0
-HDMI_RX0_HPD
+HDMI_RX0_HOT
 Text Notes 8875 1850 0    60   ~ 0
-On PRX0\n - SCL on Pin X\n - SDA on Pin X\n - CEC on Pin X\n - HPD on Pin X
+On PRX0\n - SCL on Pin X\n - SDA on Pin X\n - CEC on Pin X\n - HOT on Pin X
 Text Notes 1850 4200 0    60   ~ 0
 HDMI High Speed Signals\nPositive signals on Top Row\nNegative signals on Bottom Row
 $Comp
