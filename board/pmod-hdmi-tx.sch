@@ -77,19 +77,19 @@ F19 "HDMI_TX0_CEC" I R 6250 1700 60
 $EndSheet
 Text Label 3300 3000 0    60   ~ 0
 HDMI_TX0_CLK-
-Text Label 3300 2900 0    60   ~ 0
-HDMI_TX0_D0-
 Text Label 3300 2800 0    60   ~ 0
+HDMI_TX0_D0-
+Text Label 1700 3000 2    60   ~ 0
 HDMI_TX0_D1-
-Text Label 3300 2700 0    60   ~ 0
+Text Label 1700 2800 2    60   ~ 0
 HDMI_TX0_D2-
 Text Label 1700 2700 2    60   ~ 0
 HDMI_TX0_D2+
-Text Label 1700 2800 2    60   ~ 0
-HDMI_TX0_D1+
 Text Label 1700 2900 2    60   ~ 0
+HDMI_TX0_D1+
+Text Label 3300 2700 0    60   ~ 0
 HDMI_TX0_D0+
-Text Label 1700 3000 2    60   ~ 0
+Text Label 3300 2900 0    60   ~ 0
 HDMI_TX0_CLK+
 $Comp
 L GND #PWR01
@@ -221,19 +221,6 @@ Text Label 8125 1800 0    60   ~ 0
 HDMI_TX0_HOT
 Text Notes 8875 1850 0    60   ~ 0
 On PTX0\n - SCL on Pin X\n - SDA on Pin X\n - CEC on Pin X\n - HOT on Pin X
-Text Notes 1850 4200 0    60   ~ 0
-HDMI High Speed Signals\nPositive signals on Top Row\nNegative signals on Bottom Row
-$Comp
-L PMOD-CONN_6X2 P1
-U 1 1 58032274
-P 2500 2950
-F 0 "P1" H 2500 3300 60  0000 C CNN
-F 1 "PMOD-CONN_6X2" V 2500 2950 39  0000 C CNN
-F 2 "pmod:pmod_pin_array_6x2" H 2500 2950 60  0001 C CNN
-F 3 "" H 2500 2950 60  0000 C CNN
-	1    2500 2950
-	1    0    0    -1  
-$EndComp
 Text Label 7975 2500 0    60   ~ 0
 HDMI_TX0_EQ1
 Text Label 7975 2600 0    60   ~ 0
@@ -382,28 +369,72 @@ F 3 "" H 4525 6525 50  0000 C CNN
 	1    4525 6525
 	0    1    -1   0   
 $EndComp
+Text Notes 4000 6225 0    60   ~ 0
+Option 2
+$Comp
+L R R32
+U 1 1 580409A1
+P 6075 6575
+F 0 "R32" V 6000 6575 39  0000 C CNN
+F 1 "10k" V 6075 6575 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V 6005 6575 50  0001 C CNN
+F 3 "" H 6075 6575 50  0000 C CNN
+	1    6075 6575
+	0    -1   1    0   
+$EndComp
+Text Notes 650  5850 0    79   ~ 16
+3.3V to 5V Voltage Booster\nLoad only *one* option\n
+$Comp
+L PMOD-Device-x2-Type-XHS-Alt P1
+U 1 1 58242047
+P 2400 3250
+F 0 "P1" H 2500 3900 60  0000 C CNN
+F 1 "PMOD-Device-x2-Type-XHS-Alt" H 2490 3210 39  0001 C CNN
+F 2 "pmod-conn_6x2:pmod_pin_array_6x2" H 2500 3140 39  0001 C CNN
+F 3 "" H 2500 3550 60  0000 C CNN
+	1    2400 3250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2900 2700 3300 2700
+	2900 2700 2925 2700
 Wire Wire Line
-	2900 2800 3300 2800
+	2925 2700 3300 2700
 Wire Wire Line
-	2900 2900 3300 2900
+	2900 2800 2975 2800
 Wire Wire Line
-	2900 3000 3300 3000
+	2975 2800 3300 2800
 Wire Wire Line
-	1700 2700 2100 2700
+	2900 2900 3125 2900
 Wire Wire Line
-	1700 2800 2100 2800
+	3125 2900 3300 2900
 Wire Wire Line
-	1700 2900 2100 2900
+	2900 3000 3175 3000
 Wire Wire Line
-	1700 3000 2100 3000
+	3175 3000 3300 3000
+Wire Wire Line
+	1700 2700 1825 2700
+Wire Wire Line
+	1825 2700 2100 2700
+Wire Wire Line
+	1700 2800 1875 2800
+Wire Wire Line
+	1875 2800 2100 2800
+Wire Wire Line
+	1700 2900 2025 2900
+Wire Wire Line
+	2025 2900 2100 2900
+Wire Wire Line
+	1700 3000 2075 3000
+Wire Wire Line
+	2075 3000 2100 3000
 Wire Wire Line
 	2900 3100 3000 3100
 Wire Wire Line
 	3000 3100 3000 3650
 Wire Wire Line
-	3000 3650 2000 3650
+	3000 3650 2500 3650
+Wire Wire Line
+	2500 3650 2000 3650
 Wire Wire Line
 	2000 3650 2000 3100
 Wire Wire Line
@@ -413,7 +444,9 @@ Wire Wire Line
 Wire Wire Line
 	2050 3200 2050 3400
 Wire Wire Line
-	2050 3400 2950 3400
+	2050 3400 2500 3400
+Wire Wire Line
+	2500 3400 2950 3400
 Wire Wire Line
 	2950 3400 2950 3200
 Wire Wire Line
@@ -425,57 +458,52 @@ Wire Wire Line
 	2500 3450 2500 3400
 Connection ~ 2500 3400
 Wire Wire Line
-	2050 3000 2050 2250
+	3125 2250 4150 2250
+Connection ~ 2075 3000
 Wire Wire Line
-	2050 2250 4150 2250
-Connection ~ 2050 3000
+	2925 2000 4150 2000
+Connection ~ 2025 2900
 Wire Wire Line
-	1950 2900 1950 2000
+	2025 1750 4150 1750
+Connection ~ 1875 2800
 Wire Wire Line
-	1950 2000 4150 2000
-Connection ~ 1950 2900
+	1825 2700 1825 1500
 Wire Wire Line
-	1850 2800 1850 1750
+	1825 1500 4150 1500
+Connection ~ 1825 2700
 Wire Wire Line
-	1850 1750 4150 1750
-Connection ~ 1850 2800
+	1875 1600 4150 1600
 Wire Wire Line
-	1750 2700 1750 1500
+	2075 1850 4150 1850
+Connection ~ 2975 2800
 Wire Wire Line
-	1750 1500 4150 1500
-Connection ~ 1750 2700
+	2975 2100 4150 2100
+Connection ~ 3125 2900
 Wire Wire Line
-	2950 2700 2950 1600
-Wire Wire Line
-	2950 1600 4150 1600
-Connection ~ 2950 2700
-Wire Wire Line
-	3050 2800 3050 1850
-Wire Wire Line
-	3050 1850 4150 1850
-Connection ~ 3050 2800
-Wire Wire Line
-	3150 2900 3150 2100
-Wire Wire Line
-	3150 2100 4150 2100
-Connection ~ 3150 2900
-Wire Wire Line
-	3250 3000 3250 2350
-Wire Wire Line
-	3250 2350 4150 2350
-Connection ~ 3250 3000
+	3175 2350 4150 2350
+Connection ~ 3175 3000
 Wire Wire Line
 	6250 2000 7275 2000
 Wire Wire Line
-	6250 2100 7700 2100
+	6250 2100 7650 2100
 Wire Wire Line
-	6250 2250 7975 2250
+	7650 2100 7700 2100
 Wire Wire Line
-	6250 2350 7975 2350
+	6250 2250 6875 2250
 Wire Wire Line
-	6250 2500 7975 2500
+	6875 2250 7975 2250
 Wire Wire Line
-	6250 2600 7975 2600
+	6250 2350 6875 2350
+Wire Wire Line
+	6875 2350 7975 2350
+Wire Wire Line
+	6250 2500 6775 2500
+Wire Wire Line
+	6775 2500 7975 2500
+Wire Wire Line
+	6250 2600 6925 2600
+Wire Wire Line
+	6925 2600 7975 2600
 Wire Wire Line
 	4700 1125 5250 1125
 Wire Wire Line
@@ -483,9 +511,15 @@ Wire Wire Line
 Wire Wire Line
 	1900 6675 1500 6675
 Wire Wire Line
-	800  6825 1900 6825
+	800  6825 950  6825
 Wire Wire Line
-	950  6525 950  6925
+	950  6825 1900 6825
+Wire Wire Line
+	950  6525 950  6675
+Wire Wire Line
+	950  6675 950  6825
+Wire Wire Line
+	950  6825 950  6925
 Wire Wire Line
 	950  6525 1050 6525
 Wire Wire Line
@@ -495,14 +529,18 @@ Wire Wire Line
 	800  6825 800  6725
 Connection ~ 950  6825
 Wire Wire Line
-	3000 6575 4175 6575
+	3000 6575 3550 6575
+Wire Wire Line
+	3550 6575 4175 6575
 Connection ~ 3550 6575
 Wire Wire Line
 	3000 6775 3050 6775
 Wire Wire Line
 	3050 6775 3050 7275
 Wire Wire Line
-	3550 6925 3550 7400
+	3550 6925 3550 7275
+Wire Wire Line
+	3550 7275 3550 7400
 Wire Notes Line
 	650  6275 3200 6275
 Wire Notes Line
@@ -514,7 +552,13 @@ Wire Notes Line
 Wire Wire Line
 	950  7225 950  7275
 Wire Wire Line
-	950  7275 6050 7275
+	950  7275 3050 7275
+Wire Wire Line
+	3050 7275 3550 7275
+Wire Wire Line
+	3550 7275 5250 7275
+Wire Wire Line
+	5250 7275 6050 7275
 Wire Wire Line
 	6250 1500 8125 1500
 Wire Wire Line
@@ -552,7 +596,9 @@ Connection ~ 6875 2350
 Wire Wire Line
 	7575 2000 7650 2000
 Wire Wire Line
-	7650 2000 7650 2175
+	7650 2000 7650 2100
+Wire Wire Line
+	7650 2100 7650 2175
 Connection ~ 7650 2100
 Wire Wire Line
 	6775 2675 6775 2500
@@ -563,16 +609,22 @@ Connection ~ 6925 2600
 Wire Wire Line
 	6775 2975 6775 3175
 Wire Wire Line
-	6775 3175 6925 3175
+	6775 3175 6850 3175
+Wire Wire Line
+	6850 3175 6925 3175
 Wire Wire Line
 	6925 3175 6925 2975
 Wire Wire Line
 	6850 3175 6850 3275
 Connection ~ 6850 3175
 Wire Wire Line
-	6325 6775 5800 6775
+	6325 6775 6050 6775
 Wire Wire Line
-	6325 6500 6325 6775
+	6050 6775 5800 6775
+Wire Wire Line
+	6325 6500 6325 6575
+Wire Wire Line
+	6325 6575 6325 6775
 Wire Wire Line
 	4625 6525 4700 6525
 Wire Wire Line
@@ -604,27 +656,14 @@ Wire Notes Line
 Wire Notes Line
 	3950 7450 3950 6275
 Wire Wire Line
-	3550 6000 3550 6625
-Text Notes 4000 6225 0    60   ~ 0
-Option 2
-$Comp
-L R R32
-U 1 1 580409A1
-P 6075 6575
-F 0 "R32" V 6000 6575 39  0000 C CNN
-F 1 "10k" V 6075 6575 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 6005 6575 50  0001 C CNN
-F 3 "" H 6075 6575 50  0000 C CNN
-	1    6075 6575
-	0    -1   1    0   
-$EndComp
+	3550 6000 3550 6575
+Wire Wire Line
+	3550 6575 3550 6625
 Wire Wire Line
 	6225 6575 6325 6575
 Connection ~ 6325 6575
 Wire Wire Line
 	5925 6575 5800 6575
-Text Notes 650  5850 0    79   ~ 16
-3.3V to 5V Voltage Booster\nLoad only *one* option\n
 Wire Notes Line
 	575  5550 6575 5550
 Wire Notes Line
@@ -639,4 +678,21 @@ Wire Wire Line
 	6600 3275 6850 3275
 Wire Wire Line
 	4700 1125 4700 1100
+Wire Wire Line
+	1875 2800 1875 1600
+Wire Wire Line
+	2025 2900 2025 1750
+Wire Wire Line
+	2075 3000 2075 1850
+Wire Wire Line
+	2925 2700 2925 2000
+Connection ~ 2925 2700
+Wire Wire Line
+	2975 2100 2975 2800
+Wire Wire Line
+	3125 2900 3125 2250
+Wire Wire Line
+	3175 3000 3175 2350
+Text Notes 1900 4000 0    60   ~ 0
+HDMI High Speed Signals
 $EndSCHEMATC

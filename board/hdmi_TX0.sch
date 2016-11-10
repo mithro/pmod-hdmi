@@ -28,15 +28,20 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pmod-conn_6x2
-LIBS:ma78l00
+LIBS:pmod
 LIBS:hdmi
 LIBS:ptn3363
+LIBS:ma78l00
+LIBS:pmod-conn_6x2
+LIBS:EEPROM
+LIBS:xc9140
+LIBS:reg710-dbv
+LIBS:pmod-hdmi-tx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
