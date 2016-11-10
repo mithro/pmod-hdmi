@@ -132,9 +132,9 @@ HDMIP_TX0_SDA
 Text Label 10750 6450 0    60   ~ 0
 TX05V0
 Text Label 9000 6600 2    60   ~ 0
-HDMIP_TX0_HPD
+HDMIP_TX0_HOT
 Text Label 10750 6550 0    60   ~ 0
-HDMIP_TX0_HPD
+HDMIP_TX0_HOT
 $Comp
 L GND #PWR106
 U 1 1 57B7C214
@@ -458,7 +458,7 @@ $EndComp
 Wire Wire Line
 	6500 7150 6500 7150
 Text Label 5700 6600 0    60   ~ 0
-HDMI_TX0_HPD
+HDMI_TX0_HOT
 Text Label 3800 4700 2    60   ~ 0
 HDMI_TX0_SCL
 Text Label 3800 4800 2    60   ~ 0
@@ -604,7 +604,7 @@ Connection ~ 8550 6600
 Text Label 9000 6400 2    60   ~ 0
 HDMI_TX0_HIZ_EN
 Text Label 4685 6670 2    60   ~ 0
-HDMI_TX0_HPD
+HDMI_TX0_HOT
 Text Label 4685 6570 2    60   ~ 0
 HDMI_TX0_SCL
 Text Label 1885 6670 0    60   ~ 0
@@ -657,7 +657,7 @@ HDMI_TX0_SDA
 Text HLabel 5700 6400 0    60   Input ~ 0
 HDMI_TX0_DDET
 Text HLabel 5700 6600 0    60   Output ~ 0
-HDMI_TX0_HPD
+HDMI_TX0_HOT
 Text HLabel 9000 6400 2    60   Input ~ 0
 HDMI_TX0_HIZ_EN
 Text HLabel 9800 5950 0    60   Input ~ 0
@@ -665,7 +665,7 @@ HDMI_TX0_CEC
 Wire Wire Line
 	6500 7050 6500 7150
 Text Notes 670  10960 0    197  ~ 39
-This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\nedd182c
+This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n4b96504
 Wire Wire Line
 	2255 6970 2325 6970
 Wire Wire Line
