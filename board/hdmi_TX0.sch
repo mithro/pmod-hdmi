@@ -665,7 +665,7 @@ HDMI_TX0_CEC
 Wire Wire Line
 	6500 7050 6500 7150
 Text Notes 670  10960 0    197  ~ 39
-This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n4b96504
+This sheet is generated from ../external/templates/\nDO NOT MODIFY!!!\n8ac8b78
 Wire Wire Line
 	2255 6970 2325 6970
 Wire Wire Line
