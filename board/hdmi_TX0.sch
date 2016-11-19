@@ -41,7 +41,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 2
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -811,4 +811,20 @@ TX05V0
 Connection ~ 7450 3200
 Wire Wire Line
 	7025 2975 7575 2975
+Text Label 6550 4800 0    20   ~ 0
+HDMIA_TX0_CLK+
+Text Label 6550 4900 0    20   ~ 0
+HDMIA_TX0_CLK-
+Text Label 6550 5100 0    20   ~ 0
+HDMIA_TX0_D0+
+Text Label 6550 5200 0    20   ~ 0
+HDMIA_TX0_D0-
+Text Label 6550 5400 0    20   ~ 0
+HDMIA_TX0_D1+
+Text Label 6550 5500 0    20   ~ 0
+HDMIA_TX0_D1-
+Text Label 6550 5700 0    20   ~ 0
+HDMIA_TX0_D2+
+Text Label 6550 5800 0    20   ~ 0
+HDMIA_TX0_D2-
 $EndSCHEMATC
