@@ -794,4 +794,11 @@ Wire Notes Line
 	10925 5875 10925 4250
 Text Notes 7100 4425 0    79   ~ 16
 EDID EEPROM
+Wire Wire Line
+	1750 6675 1750 6050
+Wire Wire Line
+	1750 6050 1900 6050
+Connection ~ 1750 6675
+Text Label 1900 6050 0    60   ~ 0
+HDMI_RX0_IO0
 $EndSCHEMATC
