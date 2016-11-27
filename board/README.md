@@ -4,11 +4,17 @@
 # Length Matching
 
  * HDMI_PMOD2CAP
-  - 0.4872" (12.37488 mm) 
+  - 0.4872" (12.37488 mm)
+  - 10mil intra pair
+  - 1mil inter pair
 
+ * HDMI_CAP2IC
+  - 10mil intra pair
+  - 1mil inter pair
 
- * HDMI_CAP2IC   --
- * HDMI_I22PORT  --
+ * HDMI_I22PORT
+  - 15mil intra pair
+  - 1mil inter pair
 
 
 # Board Manufacturing
