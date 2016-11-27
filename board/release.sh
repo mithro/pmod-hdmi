@@ -25,7 +25,7 @@ OUTDIR=../releases/$NEXT_VERSION
 mkdir $OUTDIR
 
 # Update the version embedded in the PCB
-sed -e"s/(gr_text $CURRENT_VERSION/(gr_text $NEXT_VERSION/" -e"s/\$Id\$/$(git rev-parse --short HEAD)/" --in-place=.bak *.kicad_pcb
+sed -e"s/(gr_text $CURRENT_VERSION/(gr_text $NEXT_VERSION/" -e"s/\\\$Id\\\$/$(git rev-parse --short HEAD)/" --in-place=.bak *.kicad_pcb
 git add *.kicad_pcb
 
 # Generate the gerber files
