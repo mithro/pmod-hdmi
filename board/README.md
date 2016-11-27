@@ -3,7 +3,10 @@
 
 # Length Matching
 
- * HDMI_PMOD2CAP --
+ * HDMI_PMOD2CAP
+  - 0.4872" (12.37488 mm) 
+
+
  * HDMI_CAP2IC   --
  * HDMI_I22PORT  --
 
