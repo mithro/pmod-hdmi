@@ -3,6 +3,8 @@
 set -x
 set -e
 
+git submodule update --recursive --init
+
 TEMPLATES=./external/templates/
 TEMPLATE_REV="$(cd $TEMPLATES; git describe --always --dirty)"
 if echo $TEMPLATE_REV | grep -q dirty; then
@@ -15,8 +17,9 @@ set -e
 
 (
     cd $TEMPLATES
-    git fetch origin
+    git fetch --recurse-submodules origin
     git merge origin/master
+    git submodule update --recursive --init
 )
 git add $TEMPLATES
 
@@ -42,8 +45,8 @@ echo "$TEMPLATES are at $TEMPLATE_REV"
     		-e"s/\\\$WARNING2\\\$/DO NOT MODIFY!!!/" \
     		-e"s/\\\$WARNING3\\\$/$TEMPLATE_REV/" \
     	 > $OUTPUT/pmod-3V3-to-5V0.sch
-        cp -a $(dirname $F)/libraries/* $OUTPUT/libraries/
     done
+    cp -a $TEMPLATES/hdmi/output/pmod/pwr/libraries/* $OUTPUT/libraries/
 
     # HDMI output buffer
     for F in $TEMPLATES/$HDMI_TEMPLATE; do
@@ -54,6 +57,7 @@ echo "$TEMPLATES are at $TEMPLATE_REV"
     	 > $OUTPUT/hdmi_TX0.sch
     done
     cp -a $TEMPLATES/hdmi/libraries/* $OUTPUT/libraries/
+    cp -a $TEMPLATES/libraries/* $OUTPUT/libraries/
 
     # Top level schematic
     for F in $TEMPLATES/$PMOD_TEMPLATE; do
@@ -65,6 +69,7 @@ echo "$TEMPLATES are at $TEMPLATE_REV"
     		-e"s/\\\$WARNING3\\\$/$TEMPLATE_REV/" \
     	 > $OUTPUT/$(basename $F | sed -e"s/\\\$XXn\\\$/$NAME/g")
     done
+    cp -a $TEMPLATES/external/pmod/pmod* $OUTPUT/libraries/
 
     echo $OUTPUT
     ls -lR $OUTPUT
