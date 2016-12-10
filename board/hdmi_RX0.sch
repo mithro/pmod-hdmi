@@ -28,16 +28,21 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:pmod-conn_6x2
-LIBS:ma78l00
-LIBS:fdv301n
+LIBS:pmod
 LIBS:hdmi
+LIBS:ma78l00
+LIBS:pmod-conn_6x2
+LIBS:EEPROM
+LIBS:xc9140
+LIBS:reg710-dbv
 LIBS:ad8195
+LIBS:fdv301n
+LIBS:pmod-hdmi-rx-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 1
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -64,6 +69,8 @@ $Comp
 L HDMI_IN JRX0
 U 1 1 57C077DA
 P 4750 3000
+AR Path="/57C077DA" Ref="JRX0"  Part="1" 
+AR Path="/5802F547/57C077DA" Ref="JRX0"  Part="1" 
 F 0 "JRX0" H 4600 4050 60  0000 C CNN
 F 1 "HDMI_IN" V 4900 3000 60  0000 C CNN
 F 2 "hdmi:HDMI_TH" H 4700 3000 60  0001 C CNN
@@ -952,15 +959,15 @@ Wire Wire Line
 Wire Wire Line
 	7150 3650 6950 3650
 Wire Wire Line
-	6950 4900 6950 3650
+	6950 3650 6950 4900
 Wire Wire Line
-	5770 4900 6950 4900
+	6950 4900 5770 4900
 Wire Wire Line
 	7150 3750 7050 3750
 Wire Wire Line
-	7050 5000 7050 3750
+	7050 3750 7050 5000
 Wire Wire Line
-	5770 5000 7050 5000
+	7050 5000 5770 5000
 Wire Wire Line
 	6600 4900 6600 5150
 Connection ~ 6600 4900
