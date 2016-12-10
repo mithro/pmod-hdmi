@@ -4,3 +4,6 @@
 [submodule "external/templates"]
 	path = external/templates
 	url = https://github.com/mithro/HDMI2USB-kicad-templates.git
+[submodule "external/length-matching"]
+	path = external/length-matching
+	url = https://github.com/mithro/kicad-length-matching-checks
