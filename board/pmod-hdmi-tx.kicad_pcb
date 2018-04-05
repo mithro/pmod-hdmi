@@ -808,7 +808,7 @@
     (fp_text reference CTX001 (at -7.161 -7.805 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.25 0 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.25 0 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -841,7 +841,7 @@
     (fp_text reference CTX002 (at -0.049 -3.63 270) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.25 0 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.25 0 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -874,7 +874,7 @@
     (fp_text reference CTX003 (at -7.161 -6.88 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.25 0.05 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.25 -0.05 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -907,7 +907,7 @@
     (fp_text reference CTX004 (at -7.161 -7.531 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.25 0.05 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.25 0.05 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -940,7 +940,7 @@
     (fp_text reference CTX005 (at -3.782 0.014 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.257 0 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.243 0 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -973,7 +973,7 @@
     (fp_text reference CTX006 (at -7.161 -6.606 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.25 0 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.25 0 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -1006,7 +1006,7 @@
     (fp_text reference CTX007 (at -1.6168 1.193 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.257 0.05 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.243 -0.05 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
@@ -1039,7 +1039,7 @@
     (fp_text reference CTX008 (at -3.859 0.161 180) (layer B.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value 0.1uF (at 2.25 0.05 180) (layer B.Fab)
+    (fp_text value 0.1uF (at -2.25 -0.05 180) (layer B.Fab)
       (effects (font (size 0.5 0.5) (thickness 0.125)) (justify mirror))
     )
     (fp_line (start -0.5 -0.25) (end -0.5 0.25) (layer B.Fab) (width 0.15))
